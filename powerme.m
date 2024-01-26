@@ -9,17 +9,17 @@ clc
 
 data=xlsread('power11.xlsx');
 
-G=3;      %属性数
-A=7;      %企业数
+G=3;      %number of attributes
+A=7;      %number of enterprises
 % R=zeros(A*G,4);
 
-%赋值
-R=mat2cell(data,[1,1,1,1,1,1,1],[2,2,2]);%直接存成了cell型
+%assignment
+R=mat2cell(data,[1,1,1,1,1,1,1],[2,2,2]);%directly stored as cell type
 
 
 
 
-% 这里是竖着加的
+% Added vertically here
 for l=1:G
 
     m=R{1,l};
