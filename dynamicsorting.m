@@ -27,7 +27,7 @@ hold on
 % hold on
 
 % l1=legend('t1:weight')
-legend('t1Ê±¿ÌµÄÅÅÐòÎª:A1>A4>A5>A2>A3>A7>A6','t2Ê±¿ÌµÄÅÅÐòÎª:A1>A4>A2>A5>A3>A7>A6','t3Ê±¿ÌµÄÅÅÐòÎª:A1>A4>A2>A5>A3>A7>A6','×îºó×ÛºÏÅÅÐòÎª:A1>A4>A2>A5>A3>A7>A6');
+legend('Sorting at time t1 is:A1>A4>A5>A2>A3>A7>A6','Sorting at time t2 isä¸º:A1>A4>A2>A5>A3>A7>A6','Sorting at time t3 is:A1>A4>A2>A5>A3>A7>A6','The final comprehensive ranking is:A1>A4>A2>A5>A3>A7>A6');
 % leg=legend(w1,'t1:weight',w2,'t2:weight',w3,'t3:weight',wt,'t:weight');
 % [legh,objh,outh,outm]=
 % set(leg,'Box','off');
@@ -46,8 +46,8 @@ legend('t1Ê±¿ÌµÄÅÅÐòÎª:A1>A4>A5>A2>A3>A7>A6','t2Ê±¿ÌµÄÅÅÐòÎª:A1>A4>A2>A5>A3>A7>A
 % set(legh3,'position',[0.6,0.8,0.1,0.1]);
 set(gca,'xtick',1:1:7);
 set(gca,'xticklabel',{'1','2','3','4','5','6','7'});
-xlabel('7¸öÇøÓò');
-ylabel('µÃ·Öº¯ÊýÖµ');
+xlabel('7 regions');
+ylabel('score function value');
 % title('the sorting of alternatives in different stage');
 % text(1.25,0.4,'o--t1-weight');
 % text(1.25,0.425,'*--t2-weight');
