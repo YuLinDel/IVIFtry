@@ -1,7 +1,7 @@
-%Çø¼äÖ±¾õÄ£ºıÊıÅÅĞò
+% Intuitionistic fuzzy number sorting in percentage interval
 %
-%ÊäÈë
-%Êä³ö
+% Input
+% Output
 %
 
 clear 
@@ -9,12 +9,12 @@ clc
 
 data=xlsread('information4.xlsx');
 
-G=5;      %ÊôĞÔÊı
-A=4;      %ÆóÒµÊı
+G=5;      %å±æ€§æ•°
+A=4;      %ä¼ä¸šæ•°
 % R=zeros(A*G,4);
 
-%¸³Öµ
-R=mat2cell(data,[1,1,1,1],[4,4,4,4,4]);%Ö±½Ó´æ³ÉÁËcellĞÍ
+%èµ‹å€¼
+R=mat2cell(data,[1,1,1,1],[4,4,4,4,4]);%ç›´æ¥å­˜æˆäº†cellå‹
 
 D=zeros(A,A);
 sum_w=zeros(1,G);
@@ -47,8 +47,8 @@ sum_w=zeros(1,G);
 % end
 
 
-% sum_z=sum(sum_w);%×ÜºÍ
-% % ÇóÈ¨Öµ
+% sum_z=sum(sum_w);%æ€»å’Œ
+% % æ±‚æƒå€¼
 % w1=sum_w(1)/sum_z;
 % w2=sum_w(2)/sum_z;
 % w3=sum_w(3)/sum_z;
@@ -62,13 +62,13 @@ w=[0.16,0.1,0.26,0.16,0.32];
 
 %[m,n]=max(d);
 
-%´¢´æ³ÉcellĞÍ
+%å‚¨å­˜æˆcellå‹
 % for i=1:A
 %     for j=1:G
 %         R(i,j)={[data(i,4*(j-1)+1),data(i,4*(j-1)+2),data(i,4*(j-1)+3),data(i,4*(j-1)+4)]};
 %     end
 % end
-% R=mat2cell(data,[1,1,1,1,1],[4,4,4,4]);%Ö±½Ó´æ³ÉÁËcellĞÍ
+% R=mat2cell(data,[1,1,1,1,1],[4,4,4,4]);%ç›´æ¥å­˜æˆäº†cellå‹
 
 
 
@@ -95,7 +95,7 @@ for i=1:G
     end
 end
 
-%%Çó¾²Ì¬¼¯½áÖµ
+%%æ±‚é™æ€é›†ç»“å€¼
 sum_sup=sum(D,2)';
 T=zeros(G,G);
 sum_e=zeros(1,G);
