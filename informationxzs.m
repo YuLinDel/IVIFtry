@@ -1,7 +1,7 @@
-%区间直觉模糊数排序
+% Intuitionistic fuzzy number sorting in percentage interval
 %
-%输入
-%输出
+% Input
+% Output
 %
 
 clear 
@@ -9,13 +9,12 @@ clc
 
 data=xlsread('information4.xlsx');
 
-G=5;      %属性数
-A=4;      %企业数
+G=5;      %number of attributes
+A=4;      %number of enterprises
 % R=zeros(A*G,4);
 
-%赋值
-R=mat2cell(data,[1,1,1,1],[4,4,4,4,4]);%直接存成了cell型
-
+%assignment
+R=mat2cell(data,[1,1,1,1],[4,4,4,4,4]);%directly stored as cell type
 D=zeros(A,A);
 sum_w=zeros(1,G);
 % a1=0;a2=0;b1=0;b2=0;c1=0;c2=0;d1=0;d2=0;
@@ -47,8 +46,8 @@ sum_w=zeros(1,G);
 % end
 
 
-% sum_z=sum(sum_w);%总和
-% % 求权值
+% sum_z=sum(sum_w);%total
+% % requesting weights
 % w1=sum_w(1)/sum_z;
 % w2=sum_w(2)/sum_z;
 % w3=sum_w(3)/sum_z;
@@ -62,13 +61,13 @@ w=[0.16,0.1,0.26,0.16,0.32];
 
 %[m,n]=max(d);
 
-%储存成cell型
+%store as cell type
 % for i=1:A
 %     for j=1:G
 %         R(i,j)={[data(i,4*(j-1)+1),data(i,4*(j-1)+2),data(i,4*(j-1)+3),data(i,4*(j-1)+4)]};
 %     end
 % end
-% R=mat2cell(data,[1,1,1,1,1],[4,4,4,4]);%直接存成了cell型
+% R=mat2cell(data,[1,1,1,1,1],[4,4,4,4]);%directly stored as cell type
 
 
 
