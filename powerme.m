@@ -1,7 +1,7 @@
-%Çø¼äÖ±¾õÄ£ºıÊıÅÅĞò
+% Intuitionistic fuzzy number sorting in percentage interval
 %
-%ÊäÈë
-%Êä³ö
+% Input
+% Output
 %
 
 clear 
@@ -9,17 +9,17 @@ clc
 
 data=xlsread('power11.xlsx');
 
-G=3;      %ÊôĞÔÊı
-A=7;      %ÆóÒµÊı
+G=3;      %å±æ€§æ•°
+A=7;      %ä¼ä¸šæ•°
 % R=zeros(A*G,4);
 
-%¸³Öµ
-R=mat2cell(data,[1,1,1,1,1,1,1],[2,2,2]);%Ö±½Ó´æ³ÉÁËcellĞÍ
+%èµ‹å€¼
+R=mat2cell(data,[1,1,1,1,1,1,1],[2,2,2]);%ç›´æ¥å­˜æˆäº†cellå‹
 
 
 
 
-% ÕâÀïÊÇÊú×Å¼ÓµÄ
+% è¿™é‡Œæ˜¯ç«–ç€åŠ çš„
 for l=1:G
 
     m=R{1,l};
